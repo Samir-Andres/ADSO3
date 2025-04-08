@@ -13,6 +13,8 @@ import javax.swing.JLabel;
 import java.awt.Font;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import javax.swing.JSpinner;
+import javax.swing.JSeparator;
 
 public class Interfaz_promotor extends JFrame {
 
@@ -43,7 +45,7 @@ public class Interfaz_promotor extends JFrame {
 	 */
 	public Interfaz_promotor() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 680, 391);
+		setBounds(100, 100, 680, 411);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 
@@ -60,7 +62,7 @@ public class Interfaz_promotor extends JFrame {
 			}
 		});
 		btnagencia.setIcon(new ImageIcon("C:\\Users\\APRENDIZ\\Downloads\\5452481_buildings_center_mal_mall_shopping_icon.png"));
-		btnagencia.setBounds(157, 68, 61, 57);
+		btnagencia.setBounds(157, 100, 61, 57);
 		contentPane.add(btnagencia);
 		
 		JButton btncompañia = new JButton("");
@@ -80,7 +82,7 @@ public class Interfaz_promotor extends JFrame {
 			}
 		});
 		btncompañia.setIcon(new ImageIcon("C:\\Users\\APRENDIZ\\Downloads\\5452468_buildings_holidays_hotel_vacations_icon.png"));
-		btncompañia.setBounds(26, 68, 61, 57);
+		btncompañia.setBounds(26, 100, 61, 57);
 		contentPane.add(btncompañia);
 		
 		JButton btntiposdemedios = new JButton("");
@@ -93,7 +95,7 @@ public class Interfaz_promotor extends JFrame {
 			}
 		});
 		btntiposdemedios.setIcon(new ImageIcon("C:\\Users\\APRENDIZ\\Downloads\\12174226_worldwide_globe_internet_global_connection_icon.png"));
-		btntiposdemedios.setBounds(281, 68, 61, 57);
+		btntiposdemedios.setBounds(281, 100, 61, 57);
 		contentPane.add(btntiposdemedios);
 		
 		JButton btnmedios = new JButton("");
@@ -110,7 +112,7 @@ public class Interfaz_promotor extends JFrame {
 			}
 		});
 		btnmedios.setIcon(new ImageIcon("C:\\Users\\APRENDIZ\\Downloads\\4417125_email_@_envelope_letter_icon.png"));
-		btnmedios.setBounds(412, 68, 61, 57);
+		btnmedios.setBounds(412, 100, 61, 57);
 		contentPane.add(btnmedios);
 		
 		JButton btnclientes = new JButton("");
@@ -124,7 +126,7 @@ public class Interfaz_promotor extends JFrame {
 			}
 		});
 		btnclientes.setIcon(new ImageIcon("C:\\Users\\APRENDIZ\\Downloads\\403023_avatar_user_woman_female_person_icon.png"));
-		btnclientes.setBounds(536, 68, 61, 57);
+		btnclientes.setBounds(546, 100, 61, 57);
 		contentPane.add(btnclientes);
 		
 		JButton bntoperadores = new JButton("");
@@ -137,7 +139,7 @@ public class Interfaz_promotor extends JFrame {
 			}
 		});
 		bntoperadores.setIcon(new ImageIcon("C:\\Users\\APRENDIZ\\Downloads\\4715004_actor_avatar_people_person_profile_icon.png"));
-		bntoperadores.setBounds(26, 170, 61, 57);
+		bntoperadores.setBounds(26, 202, 61, 57);
 		contentPane.add(bntoperadores);
 		
 		JButton btnpaquetes = new JButton("");
@@ -152,7 +154,7 @@ public class Interfaz_promotor extends JFrame {
 			}
 		});
 		btnpaquetes.setIcon(new ImageIcon("C:\\Users\\APRENDIZ\\Downloads\\6791621_box_package_product_products_icon.png"));
-		btnpaquetes.setBounds(157, 170, 61, 57);
+		btnpaquetes.setBounds(157, 202, 61, 57);
 		contentPane.add(btnpaquetes);
 		
 		JButton btnpromotores = new JButton("");
@@ -173,7 +175,7 @@ public class Interfaz_promotor extends JFrame {
 			}
 		});
 		btnpromotores.setIcon(new ImageIcon("C:\\Users\\APRENDIZ\\Downloads\\4417115_headset_operator_person_support_mic_icon.png"));
-		btnpromotores.setBounds(281, 170, 61, 57);
+		btnpromotores.setBounds(281, 202, 61, 57);
 		contentPane.add(btnpromotores);
 		
 		JButton btnvehiculos = new JButton("");
@@ -194,7 +196,7 @@ public class Interfaz_promotor extends JFrame {
 			}
 		});
 		btnvehiculos.setIcon(new ImageIcon("C:\\Users\\APRENDIZ\\Downloads\\4288586_and_cargo_delivery_shipping_transport_icon.png"));
-		btnvehiculos.setBounds(412, 170, 61, 57);
+		btnvehiculos.setBounds(412, 202, 61, 57);
 		contentPane.add(btnvehiculos);
 		
 		JButton bnttiposvehiculos = new JButton("");
@@ -210,12 +212,12 @@ public class Interfaz_promotor extends JFrame {
 			}
 		});
 		bnttiposvehiculos.setIcon(new ImageIcon("C:\\Users\\APRENDIZ\\Downloads\\5978677_airplane_corona_coronavirus_plane_travel_icon.png"));
-		bnttiposvehiculos.setBounds(536, 170, 61, 57);
+		bnttiposvehiculos.setBounds(546, 202, 61, 57);
 		contentPane.add(bnttiposvehiculos);
 		
-		JLabel lblNewLabel = new JLabel("Tablas de Informacion");
+		JLabel lblNewLabel = new JLabel("Bienvenidos al centro de información");
 		lblNewLabel.setFont(new Font("Serif", Font.BOLD, 19));
-		lblNewLabel.setBounds(229, 23, 192, 25);
+		lblNewLabel.setBounds(172, 22, 329, 25);
 		contentPane.add(lblNewLabel);
 	}
 }

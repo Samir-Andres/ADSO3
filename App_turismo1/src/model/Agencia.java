@@ -96,16 +96,18 @@ public class Agencia {
 	}
 	
 	public void delete(int idagencia ) {
-		Connection dbConnection = null;
-		PreparedStatement pst = null; //
+		Connection dbConnection = null;  // Se crea un objeto de la clase Connection
+		PreparedStatement pst = null; // Se prepara la transaccion
 		
+//		El scrip 
 		String script = "DELETE FROM tblagencia  WHERE idagencia = ?";
 		
 		try {
 			
-			dbConnection = conector.conectarBD();
-			pst = dbConnection.prepareStatement(script);
+			dbConnection = conector.conectarBD(); // Se abre la conexion 
+			pst = dbConnection.prepareStatement(script); // Se abre el buffer
 			
+//			parametros que se le envian 
 			pst.setInt(1, idagencia);
 			
 			pst.executeUpdate();
