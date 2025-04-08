@@ -144,10 +144,7 @@ public class Agencia {
 				idcompania.setText(rs.getString(7));
 				
 			}
-			
 		
-			
-			JOptionPane.showConfirmDialog(null, "Registro con exito");
 			
 		} catch (SQLException e) {
 			System.out.println(e.getMessage());
