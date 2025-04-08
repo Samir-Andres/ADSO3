@@ -110,7 +110,7 @@ public class Agencia {
 //			parametros que se le envian 
 			pst.setInt(1, idagencia);
 			
-			pst.executeUpdate();
+			pst.executeUpdate(); // es metodo que se utiliza para ejecutar una sentencial sql
 			
 			JOptionPane.showConfirmDialog(null, "Registro con exito");
 			
