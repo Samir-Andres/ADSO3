@@ -16,6 +16,7 @@ public class Acc_Promotores {
 	
 	public int documento;
 	public String contraseña;
+	
 	Interfaz_promotor principal = new Interfaz_promotor();
 	
 	Conexion conector = new Conexion();
@@ -51,9 +52,11 @@ public class Acc_Promotores {
          int seguir = JOptionPane.showConfirmDialog(null, "¡Desea iniciar sesion?");
 
         if (seguir == JOptionPane.OK_OPTION) {
+        	 JOptionPane.showMessageDialog(null, "Acceso Permitido");
+        	 
         	 while(rs.next()) {
 	        	  principal.show();
-	        	  JOptionPane.showMessageDialog(null, "Acceso Permitido");
+	        	 
 	        }
         	 
         	

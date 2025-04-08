@@ -48,7 +48,7 @@ public class Jtipostransportes extends JFrame {
 	 */
 	public Jtipostransportes() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 450, 398);
+		setBounds(100, 100, 450, 461);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 
@@ -57,21 +57,21 @@ public class Jtipostransportes extends JFrame {
 		
 		JLabel lblNewLabel_1 = new JLabel("Nombre");
 		lblNewLabel_1.setFont(new Font("Serif", Font.BOLD, 13));
-		lblNewLabel_1.setBounds(51, 54, 46, 14);
+		lblNewLabel_1.setBounds(51, 116, 46, 14);
 		contentPane.add(lblNewLabel_1);
 		
 		txtnombre = new JTextField();
-		txtnombre.setBounds(152, 48, 131, 20);
+		txtnombre.setBounds(152, 110, 131, 20);
 		contentPane.add(txtnombre);
 		txtnombre.setColumns(10);
 		
 		JLabel lblNewLabel_2 = new JLabel("Observacion");
 		lblNewLabel_2.setFont(new Font("Serif", Font.BOLD, 13));
-		lblNewLabel_2.setBounds(34, 114, 78, 14);
+		lblNewLabel_2.setBounds(34, 176, 78, 14);
 		contentPane.add(lblNewLabel_2);
 		
 		txtobservacion = new JTextField();
-		txtobservacion.setBounds(152, 108, 131, 20);
+		txtobservacion.setBounds(152, 170, 131, 20);
 		contentPane.add(txtobservacion);
 		txtobservacion.setColumns(10);
 		
@@ -94,7 +94,7 @@ public class Jtipostransportes extends JFrame {
 			
 		});
 		btnRegistrar.setFont(new Font("Serif", Font.BOLD, 13));
-		btnRegistrar.setBounds(10, 242, 72, 54);
+		btnRegistrar.setBounds(10, 287, 72, 54);
 		contentPane.add(btnRegistrar);
 		
 		JButton btnLimpiar = new JButton("Limpiar");
@@ -105,7 +105,7 @@ public class Jtipostransportes extends JFrame {
 			}
 		});
 		btnLimpiar.setFont(new Font("Serif", Font.BOLD, 13));
-		btnLimpiar.setBounds(168, 325, 89, 23);
+		btnLimpiar.setBounds(168, 370, 89, 23);
 		contentPane.add(btnLimpiar);
 		
 		JButton btnEliminar = new JButton("");
@@ -123,18 +123,18 @@ public class Jtipostransportes extends JFrame {
 			
 		});
 		btnEliminar.setIcon(new ImageIcon("C:\\Users\\APRENDIZ\\Documents\\Iconos\\9004743_trash_delete_bin_remove_icon.png"));
-		btnEliminar.setBounds(131, 242, 53, 54);
+		btnEliminar.setBounds(131, 287, 53, 54);
 		contentPane.add(btnEliminar);
 		
 		
 		
 		JLabel lblNewLabel = new JLabel("ID Tipos de transporte");
 		lblNewLabel.setFont(new Font("Serif", Font.BOLD, 13));
-		lblNewLabel.setBounds(10, 180, 131, 14);
+		lblNewLabel.setBounds(10, 242, 131, 14);
 		contentPane.add(lblNewLabel);
 		
 		txtidtipotransporte1 = new JTextField();
-		txtidtipotransporte1.setBounds(153, 174, 130, 20);
+		txtidtipotransporte1.setBounds(153, 236, 130, 20);
 		contentPane.add(txtidtipotransporte1);
 		txtidtipotransporte1.setColumns(10);
 		
@@ -146,7 +146,7 @@ public class Jtipostransportes extends JFrame {
 			}
 		});
 		btnNewButton.setIcon(new ImageIcon("C:\\Users\\APRENDIZ\\Documents\\Iconos\\3827704_color_lineal_magnifying glass_sale_search_icon.png"));
-		btnNewButton.setBounds(246, 242, 60, 54);
+		btnNewButton.setBounds(246, 287, 60, 54);
 		contentPane.add(btnNewButton);
 		
 		JButton btnupdate = new JButton("");
@@ -157,8 +157,13 @@ public class Jtipostransportes extends JFrame {
 			}
 		});
 		btnupdate.setIcon(new ImageIcon("C:\\Users\\APRENDIZ\\Documents\\Iconos\\6071808_folder_progress_task_update_update task progress_icon.png"));
-		btnupdate.setBounds(353, 242, 60, 54);
+		btnupdate.setBounds(353, 287, 60, 54);
 		contentPane.add(btnupdate);
+		
+		JLabel lblNewLabel_3 = new JLabel("Información De Tipos de Transportes");
+		lblNewLabel_3.setFont(new Font("Serif", Font.BOLD, 20));
+		lblNewLabel_3.setBounds(76, 27, 313, 44);
+		contentPane.add(lblNewLabel_3);
 		
 		btnLimpiar.addActionListener(e -> clearFields());
 	}

@@ -97,9 +97,9 @@ public class Jcompania extends JFrame {
 		contentPane.add(txtweb);
 		txtweb.setColumns(10);
 		
-		lblNewLabel = new JLabel("COMPAÑIA DATOS");
-		lblNewLabel.setFont(new Font("Serif", Font.BOLD, 13));
-		lblNewLabel.setBounds(186, 22, 173, 14);
+		lblNewLabel = new JLabel("Información de Compañia");
+		lblNewLabel.setFont(new Font("Serif", Font.BOLD, 20));
+		lblNewLabel.setBounds(129, 25, 235, 20);
 		contentPane.add(lblNewLabel);
 		
 		lblNewLabel_1 = new JLabel("Razonn Social");

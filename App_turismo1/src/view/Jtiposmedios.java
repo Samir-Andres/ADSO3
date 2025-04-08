@@ -57,7 +57,7 @@ public class Jtiposmedios extends JFrame {
 	public Jtiposmedios() {
 		setTitle("TIPOS DE MEDIOS");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 450, 467);
+		setBounds(100, 100, 450, 511);
 		contentPane = new JPanel();
 		contentPane.setBackground(new Color(255, 255, 255));
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -66,23 +66,23 @@ public class Jtiposmedios extends JFrame {
 		contentPane.setLayout(null);
 		
 		txtnombre = new JTextField();
-		txtnombre.setBounds(157, 68, 106, 20);
+		txtnombre.setBounds(157, 109, 106, 20);
 		contentPane.add(txtnombre);
 		txtnombre.setColumns(10);
 		
 		txtobservacion = new JTextField();
-		txtobservacion.setBounds(157, 134, 106, 20);
+		txtobservacion.setBounds(157, 175, 106, 20);
 		contentPane.add(txtobservacion);
 		txtobservacion.setColumns(10);
 		
 		JLabel lblNewLabel_1 = new JLabel("Nombres");
 		lblNewLabel_1.setFont(new Font("Serif", Font.BOLD, 13));
-		lblNewLabel_1.setBounds(67, 70, 56, 14);
+		lblNewLabel_1.setBounds(67, 111, 56, 14);
 		contentPane.add(lblNewLabel_1);
 		
 		JLabel lblNewLabel_2 = new JLabel("Observacion");
 		lblNewLabel_2.setFont(new Font("Serif", Font.BOLD, 13));
-		lblNewLabel_2.setBounds(67, 136, 71, 14);
+		lblNewLabel_2.setBounds(67, 177, 71, 14);
 		contentPane.add(lblNewLabel_2);
 		
 		JButton btnNewButton = new JButton("");
@@ -106,15 +106,15 @@ public class Jtiposmedios extends JFrame {
 		btnNewButton.setForeground(new Color(0, 0, 0));
 		btnNewButton.setBackground(new Color(255, 255, 255));
 		btnNewButton.setFont(new Font("Serif", Font.BOLD, 13));
-		btnNewButton.setBounds(30, 270, 63, 54);
+		btnNewButton.setBounds(30, 315, 63, 54);
 		contentPane.add(btnNewButton);
 		
 		JSeparator separator_1 = new JSeparator();
-		separator_1.setBounds(157, 99, 106, 14);
+		separator_1.setBounds(157, 140, 106, 14);
 		contentPane.add(separator_1);
 		
 		JSeparator separator_2 = new JSeparator();
-		separator_2.setBounds(157, 165, 106, 14);
+		separator_2.setBounds(157, 206, 106, 14);
 		contentPane.add(separator_2);
 		
 		JButton btnLimpiar = new JButton("Limpiar");
@@ -129,22 +129,22 @@ public class Jtiposmedios extends JFrame {
 			}
 		});
 		btnLimpiar.setFont(new Font("Serif", Font.BOLD, 13));
-		btnLimpiar.setBounds(157, 361, 106, 23);
+		btnLimpiar.setBounds(157, 406, 106, 23);
 		contentPane.add(btnLimpiar);
 		
 		JLabel lblNewLabel = new JLabel("Gestion de Tipos De Medios");
-		lblNewLabel.setFont(new Font("Serif", Font.BOLD, 13));
-		lblNewLabel.setBounds(133, 25, 173, 14);
+		lblNewLabel.setFont(new Font("Serif", Font.BOLD, 20));
+		lblNewLabel.setBounds(80, 31, 258, 32);
 		contentPane.add(lblNewLabel);
 		
 		txtidtiposmedios = new JTextField();
-		txtidtiposmedios.setBounds(157, 204, 106, 20);
+		txtidtiposmedios.setBounds(157, 245, 106, 20);
 		contentPane.add(txtidtiposmedios);
 		txtidtiposmedios.setColumns(10);
 		
 		JLabel lblNewLabel_3 = new JLabel("ID Tipos de Medios");
 		lblNewLabel_3.setFont(new Font("Serif", Font.BOLD, 13));
-		lblNewLabel_3.setBounds(30, 206, 115, 14);
+		lblNewLabel_3.setBounds(30, 247, 115, 14);
 		contentPane.add(lblNewLabel_3);
 		
 		JButton btnEliminar = new JButton("");
@@ -155,7 +155,7 @@ public class Jtiposmedios extends JFrame {
 			}
 		});
 		btnEliminar.setIcon(new ImageIcon("C:\\Users\\APRENDIZ\\Documents\\Iconos\\9004743_trash_delete_bin_remove_icon.png"));
-		btnEliminar.setBounds(138, 270, 63, 54);
+		btnEliminar.setBounds(138, 315, 63, 54);
 		contentPane.add(btnEliminar);
 		
 		JButton btnNewButton_1 = new JButton("");
@@ -170,7 +170,7 @@ public class Jtiposmedios extends JFrame {
 			}
 		});
 		btnNewButton_1.setIcon(new ImageIcon("C:\\Users\\APRENDIZ\\Documents\\Iconos\\3827704_color_lineal_magnifying glass_sale_search_icon.png"));
-		btnNewButton_1.setBounds(244, 271, 62, 53);
+		btnNewButton_1.setBounds(244, 316, 62, 53);
 		contentPane.add(btnNewButton_1);
 		
 		JButton btnupdate = new JButton("");
@@ -182,11 +182,11 @@ public class Jtiposmedios extends JFrame {
 			}
 		});
 		btnupdate.setIcon(new ImageIcon("C:\\Users\\APRENDIZ\\Documents\\Iconos\\6071808_folder_progress_task_update_update task progress_icon.png"));
-		btnupdate.setBounds(350, 271, 62, 53);
+		btnupdate.setBounds(350, 316, 62, 53);
 		contentPane.add(btnupdate);
 		
 		JSeparator separator_2_1 = new JSeparator();
-		separator_2_1.setBounds(157, 235, 106, 14);
+		separator_2_1.setBounds(157, 276, 106, 14);
 		contentPane.add(separator_2_1);
 		btnLimpiar.addActionListener(e -> clearFields());
 		

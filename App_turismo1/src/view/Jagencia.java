@@ -54,7 +54,7 @@ public class Jagencia extends JFrame {
 	 */
 	public Jagencia() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 482, 346);
+		setBounds(100, 100, 482, 470);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 
@@ -62,63 +62,63 @@ public class Jagencia extends JFrame {
 		contentPane.setLayout(null);
 		
 		txtnombres = new JTextField();
-		txtnombres.setBounds(26, 64, 106, 20);
+		txtnombres.setBounds(27, 117, 106, 20);
 		contentPane.add(txtnombres);
 		txtnombres.setColumns(10);
 		
 		txttelefono = new JTextField();
-		txttelefono.setBounds(164, 64, 110, 20);
+		txttelefono.setBounds(165, 117, 110, 20);
 		contentPane.add(txttelefono);
 		txttelefono.setColumns(10);
 		
 		txtdireccion = new JTextField();
-		txtdireccion.setBounds(311, 64, 106, 20);
+		txtdireccion.setBounds(313, 117, 106, 20);
 		contentPane.add(txtdireccion);
 		txtdireccion.setColumns(10);
 		
 		txtcorreo = new JTextField();
-		txtcorreo.setBounds(26, 136, 106, 20);
+		txtcorreo.setBounds(27, 189, 106, 20);
 		contentPane.add(txtcorreo);
 		txtcorreo.setColumns(10);
 		
 		txtweb = new JTextField();
-		txtweb.setBounds(164, 136, 110, 20);
+		txtweb.setBounds(165, 189, 110, 20);
 		contentPane.add(txtweb);
 		txtweb.setColumns(10);
 		
 		txtidcompania = new JTextField();
-		txtidcompania.setBounds(311, 136, 106, 20);
+		txtidcompania.setBounds(313, 189, 106, 20);
 		contentPane.add(txtidcompania);
 		txtidcompania.setColumns(10);
 		
 		JLabel lblNewLabel_1 = new JLabel("Nombres");
 		lblNewLabel_1.setFont(new Font("Serif", Font.BOLD, 13));
-		lblNewLabel_1.setBounds(54, 39, 64, 14);
+		lblNewLabel_1.setBounds(55, 92, 64, 14);
 		contentPane.add(lblNewLabel_1);
 		
 		JLabel lblNewLabel_2 = new JLabel("Telefono");
 		lblNewLabel_2.setFont(new Font("Serif", Font.BOLD, 13));
-		lblNewLabel_2.setBounds(186, 39, 64, 14);
+		lblNewLabel_2.setBounds(187, 92, 64, 14);
 		contentPane.add(lblNewLabel_2);
 		
 		JLabel lblNewLabel_3 = new JLabel("Dirección");
 		lblNewLabel_3.setFont(new Font("Serif", Font.BOLD, 13));
-		lblNewLabel_3.setBounds(338, 39, 64, 14);
+		lblNewLabel_3.setBounds(340, 92, 64, 14);
 		contentPane.add(lblNewLabel_3);
 		
 		JLabel lblNewLabel_4 = new JLabel("Correo");
 		lblNewLabel_4.setFont(new Font("Serif", Font.BOLD, 13));
-		lblNewLabel_4.setBounds(54, 111, 64, 14);
+		lblNewLabel_4.setBounds(55, 164, 64, 14);
 		contentPane.add(lblNewLabel_4);
 		
 		JLabel lblNewLabel_5 = new JLabel("Web");
 		lblNewLabel_5.setFont(new Font("Serif", Font.BOLD, 13));
-		lblNewLabel_5.setBounds(197, 111, 46, 14);
+		lblNewLabel_5.setBounds(198, 164, 46, 14);
 		contentPane.add(lblNewLabel_5);
 		
 		JLabel lblNewLabel_6 = new JLabel("Id Compania");
 		lblNewLabel_6.setFont(new Font("Serif", Font.BOLD, 13));
-		lblNewLabel_6.setBounds(326, 111, 78, 14);
+		lblNewLabel_6.setBounds(328, 164, 78, 14);
 		contentPane.add(lblNewLabel_6);
 		
 		JButton btnRegistrar = new JButton("");
@@ -140,23 +140,23 @@ public class Jagencia extends JFrame {
 			}
 		});
 		btnRegistrar.setFont(new Font("Serif", Font.BOLD, 13));
-		btnRegistrar.setBounds(146, 199, 57, 52);
+		btnRegistrar.setBounds(148, 285, 57, 52);
 		contentPane.add(btnRegistrar);
 		
 		JButton btnLimpiar = new JButton("Limpiar");
 		btnLimpiar.setForeground(new Color(0, 0, 0));
 		btnLimpiar.setFont(new Font("Serif", Font.BOLD, 13));
-		btnLimpiar.setBounds(248, 273, 89, 23);
+		btnLimpiar.setBounds(247, 359, 89, 23);
 		contentPane.add(btnLimpiar);
 		
 		txtidagencia = new JTextField();
-		txtidagencia.setBounds(26, 202, 110, 20);
+		txtidagencia.setBounds(27, 255, 110, 20);
 		contentPane.add(txtidagencia);
 		txtidagencia.setColumns(10);
 		
 		JLabel lblNewLabel = new JLabel("Id Agencia");
 		lblNewLabel.setFont(new Font("Serif", Font.BOLD, 13));
-		lblNewLabel.setBounds(54, 175, 64, 14);
+		lblNewLabel.setBounds(55, 228, 64, 14);
 		contentPane.add(lblNewLabel);
 		
 		JButton btnEliminar = new JButton("");
@@ -169,7 +169,7 @@ public class Jagencia extends JFrame {
 			}
 		});
 		btnEliminar.setIcon(new ImageIcon("C:\\Users\\APRENDIZ\\Documents\\Iconos\\9004743_trash_delete_bin_remove_icon.png"));
-		btnEliminar.setBounds(230, 199, 64, 52);
+		btnEliminar.setBounds(229, 285, 64, 52);
 		contentPane.add(btnEliminar);
 		
 		JButton btnNewButton = new JButton("");
@@ -188,7 +188,7 @@ public class Jagencia extends JFrame {
 			}
 		});
 		btnNewButton.setIcon(new ImageIcon("C:\\Users\\APRENDIZ\\Documents\\Iconos\\3827704_color_lineal_magnifying glass_sale_search_icon.png"));
-		btnNewButton.setBounds(311, 199, 57, 52);
+		btnNewButton.setBounds(310, 285, 57, 52);
 		contentPane.add(btnNewButton);
 		
 		JButton btnNewButton_1 = new JButton("");
@@ -206,8 +206,13 @@ public class Jagencia extends JFrame {
 			}
 		});
 		btnNewButton_1.setIcon(new ImageIcon("C:\\Users\\APRENDIZ\\Documents\\Iconos\\6071808_folder_progress_task_update_update task progress_icon.png"));
-		btnNewButton_1.setBounds(388, 199, 57, 52);
+		btnNewButton_1.setBounds(387, 285, 57, 52);
 		contentPane.add(btnNewButton_1);
+		
+		JLabel lblNewLabel_7 = new JLabel("Información Agencia");
+		lblNewLabel_7.setFont(new Font("Serif", Font.BOLD, 20));
+		lblNewLabel_7.setBounds(140, 42, 227, 23);
+		contentPane.add(lblNewLabel_7);
 		btnLimpiar.addActionListener(e -> clearFields());
 	}
 

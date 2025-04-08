@@ -44,6 +44,7 @@ public class Joperadores extends JFrame {
 	private JTextField txtidvehiculo;
 	private JLabel lblNewLabel_8;
 	private JButton btnupdate;
+	private JLabel lblNewLabel_9;
 
 	/**
 	 * Launch the application.
@@ -66,7 +67,7 @@ public class Joperadores extends JFrame {
 	 */
 	public Joperadores() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 536, 412);
+		setBounds(100, 100, 536, 476);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 
@@ -74,73 +75,73 @@ public class Joperadores extends JFrame {
 		contentPane.setLayout(null);
 		
 		txttipodocumento = new JTextField();
-		txttipodocumento.setBounds(10, 65, 118, 20);
+		txttipodocumento.setBounds(10, 114, 118, 20);
 		contentPane.add(txttipodocumento);
 		txttipodocumento.setColumns(10);
 		
 		txtnombre = new JTextField();
-		txtnombre.setBounds(364, 65, 118, 20);
+		txtnombre.setBounds(364, 114, 118, 20);
 		contentPane.add(txtnombre);
 		txtnombre.setColumns(10);
 		
 		txtapellido = new JTextField();
-		txtapellido.setBounds(10, 139, 118, 20);
+		txtapellido.setBounds(10, 188, 118, 20);
 		contentPane.add(txtapellido);
 		txtapellido.setColumns(10);
 		
 		txtdireccion = new JTextField();
-		txtdireccion.setBounds(199, 139, 118, 20);
+		txtdireccion.setBounds(199, 188, 118, 20);
 		contentPane.add(txtdireccion);
 		txtdireccion.setColumns(10);
 		
 		txtcorreo = new JTextField();
-		txtcorreo.setBounds(364, 139, 118, 20);
+		txtcorreo.setBounds(364, 188, 118, 20);
 		contentPane.add(txtcorreo);
 		txtcorreo.setColumns(10);
 		
 		txttelefono = new JTextField();
-		txttelefono.setBounds(10, 197, 118, 20);
+		txttelefono.setBounds(10, 246, 118, 20);
 		contentPane.add(txttelefono);
 		txttelefono.setColumns(10);
 		
 		txtidoperadores = new JTextField();
-		txtidoperadores.setBounds(364, 195, 118, 20);
+		txtidoperadores.setBounds(364, 244, 118, 20);
 		contentPane.add(txtidoperadores);
 		txtidoperadores.setColumns(10);
 		
 		lblNewLabel = new JLabel("Tipo de Documento");
 		lblNewLabel.setFont(new Font("Serif", Font.BOLD, 13));
-		lblNewLabel.setBounds(10, 40, 118, 14);
+		lblNewLabel.setBounds(10, 89, 118, 14);
 		contentPane.add(lblNewLabel);
 		
 		lblNewLabel_1 = new JLabel("Nombres");
 		lblNewLabel_1.setFont(new Font("Serif", Font.BOLD, 13));
-		lblNewLabel_1.setBounds(386, 40, 88, 14);
+		lblNewLabel_1.setBounds(386, 89, 88, 14);
 		contentPane.add(lblNewLabel_1);
 		
 		lblNewLabel_2 = new JLabel("Apellidos");
 		lblNewLabel_2.setFont(new Font("Serif", Font.BOLD, 13));
-		lblNewLabel_2.setBounds(40, 114, 88, 14);
+		lblNewLabel_2.setBounds(40, 163, 88, 14);
 		contentPane.add(lblNewLabel_2);
 		
 		lblNewLabel_3 = new JLabel("Dirección");
 		lblNewLabel_3.setFont(new Font("Serif", Font.BOLD, 13));
-		lblNewLabel_3.setBounds(233, 114, 84, 14);
+		lblNewLabel_3.setBounds(233, 163, 84, 14);
 		contentPane.add(lblNewLabel_3);
 		
 		lblNewLabel_4 = new JLabel("Correo");
 		lblNewLabel_4.setFont(new Font("Serif", Font.BOLD, 13));
-		lblNewLabel_4.setBounds(400, 114, 46, 14);
+		lblNewLabel_4.setBounds(400, 163, 46, 14);
 		contentPane.add(lblNewLabel_4);
 		
 		lblNewLabel_5 = new JLabel("Telefono");
 		lblNewLabel_5.setFont(new Font("Serif", Font.BOLD, 13));
-		lblNewLabel_5.setBounds(41, 172, 73, 14);
+		lblNewLabel_5.setBounds(41, 221, 73, 14);
 		contentPane.add(lblNewLabel_5);
 		
 		lblNewLabel_6 = new JLabel("ID Operadores");
 		lblNewLabel_6.setFont(new Font("Serif", Font.BOLD, 13));
-		lblNewLabel_6.setBounds(386, 170, 82, 14);
+		lblNewLabel_6.setBounds(386, 219, 82, 14);
 		contentPane.add(lblNewLabel_6);
 		
 		btnRegistrar = new JButton("");
@@ -164,33 +165,33 @@ public class Joperadores extends JFrame {
 			}
 		});
 		btnRegistrar.setFont(new Font("Serif", Font.BOLD, 13));
-		btnRegistrar.setBounds(20, 238, 58, 57);
+		btnRegistrar.setBounds(40, 289, 58, 57);
 		contentPane.add(btnRegistrar);
 		
 		btnLimpiar = new JButton("Limpiar");
 		btnLimpiar.setFont(new Font("Serif", Font.BOLD, 13));
-		btnLimpiar.setBounds(221, 320, 111, 23);
+		btnLimpiar.setBounds(219, 371, 111, 23);
 		contentPane.add(btnLimpiar);
 		
 		txtDocumento = new JTextField();
-		txtDocumento.setBounds(202, 65, 115, 20);
+		txtDocumento.setBounds(199, 114, 118, 20);
 		contentPane.add(txtDocumento);
 		txtDocumento.setColumns(10);
 		
 		JLabel lblNewLabel_7 = new JLabel("Documento");
 		lblNewLabel_7.setFont(new Font("Serif", Font.BOLD, 13));
-		lblNewLabel_7.setBounds(233, 40, 70, 14);
+		lblNewLabel_7.setBounds(233, 89, 70, 14);
 		contentPane.add(lblNewLabel_7);
 		
 		txtidvehiculo = new JTextField();
 		txtidvehiculo.setText("");
 		txtidvehiculo.setColumns(10);
-		txtidvehiculo.setBounds(199, 197, 118, 20);
+		txtidvehiculo.setBounds(199, 246, 118, 20);
 		contentPane.add(txtidvehiculo);
 		
 		lblNewLabel_8 = new JLabel("ID Vehiculo");
 		lblNewLabel_8.setFont(new Font("Serif", Font.BOLD, 13));
-		lblNewLabel_8.setBounds(233, 172, 84, 14);
+		lblNewLabel_8.setBounds(233, 221, 84, 14);
 		contentPane.add(lblNewLabel_8);
 		
 		JButton btnEliminar = new JButton("");
@@ -206,10 +207,14 @@ public class Joperadores extends JFrame {
 			}
 		});
 		btnEliminar.setIcon(new ImageIcon("C:\\Users\\APRENDIZ\\Documents\\Iconos\\9004743_trash_delete_bin_remove_icon.png"));
-		btnEliminar.setBounds(157, 238, 58, 57);
+		btnEliminar.setBounds(160, 289, 58, 57);
 		contentPane.add(btnEliminar);
 		
 		btnNewButton = new JButton("");
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
 		btnNewButton.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -217,7 +222,7 @@ public class Joperadores extends JFrame {
 			}
 		});
 		btnNewButton.setIcon(new ImageIcon("C:\\Users\\APRENDIZ\\Documents\\Iconos\\3827704_color_lineal_magnifying glass_sale_search_icon.png"));
-		btnNewButton.setBounds(274, 238, 58, 57);
+		btnNewButton.setBounds(279, 289, 58, 57);
 		contentPane.add(btnNewButton);
 		
 		btnupdate = new JButton("");
@@ -231,8 +236,13 @@ public class Joperadores extends JFrame {
 			}
 		});
 		btnupdate.setIcon(new ImageIcon("C:\\Users\\APRENDIZ\\Documents\\Iconos\\6071808_folder_progress_task_update_update task progress_icon.png"));
-		btnupdate.setBounds(416, 226, 58, 57);
+		btnupdate.setBounds(398, 289, 58, 57);
 		contentPane.add(btnupdate);
+		
+		lblNewLabel_9 = new JLabel("Información De Operadores");
+		lblNewLabel_9.setFont(new Font("Serif", Font.BOLD, 20));
+		lblNewLabel_9.setBounds(144, 34, 245, 36);
+		contentPane.add(lblNewLabel_9);
 		
 	
 		

@@ -57,33 +57,33 @@ public class Jmedios extends JFrame {
 		jmedios.setLayout(null);
 		
 		txtnombre = new JTextField();
-		txtnombre.setBounds(10, 79, 122, 20);
+		txtnombre.setBounds(10, 103, 122, 20);
 		jmedios.add(txtnombre);
 		txtnombre.setColumns(10);
 		
 		txtobservacion = new JTextField();
-		txtobservacion.setBounds(163, 79, 122, 20);
+		txtobservacion.setBounds(163, 103, 122, 20);
 		jmedios.add(txtobservacion);
 		txtobservacion.setColumns(10);
 		
 		txtidtiposmedios = new JTextField();
-		txtidtiposmedios.setBounds(312, 79, 122, 20);
+		txtidtiposmedios.setBounds(312, 103, 122, 20);
 		jmedios.add(txtidtiposmedios);
 		txtidtiposmedios.setColumns(10);
 		
 		JLabel lblNewLabel = new JLabel("Nombres");
 		lblNewLabel.setFont(new Font("Serif", Font.BOLD, 13));
-		lblNewLabel.setBounds(30, 54, 122, 14);
+		lblNewLabel.setBounds(30, 78, 122, 14);
 		jmedios.add(lblNewLabel);
 		
 		JLabel lblNewLabel_1 = new JLabel("Observacion");
 		lblNewLabel_1.setFont(new Font("Serif", Font.BOLD, 13));
-		lblNewLabel_1.setBounds(187, 54, 89, 14);
+		lblNewLabel_1.setBounds(187, 78, 89, 14);
 		jmedios.add(lblNewLabel_1);
 		
 		JLabel lblNewLabel_2 = new JLabel("Id Tipos de Medios");
 		lblNewLabel_2.setFont(new Font("Serif", Font.BOLD, 13));
-		lblNewLabel_2.setBounds(322, 54, 112, 14);
+		lblNewLabel_2.setBounds(322, 78, 112, 14);
 		jmedios.add(lblNewLabel_2);
 		
 		JButton btnRegistrar = new JButton("");
@@ -104,7 +104,7 @@ public class Jmedios extends JFrame {
 			}
 		});
 		btnRegistrar.setFont(new Font("Serif", Font.BOLD, 13));
-		btnRegistrar.setBounds(10, 231, 66, 62);
+		btnRegistrar.setBounds(200, 146, 66, 62);
 		jmedios.add(btnRegistrar);
 		
 		JButton btnLimpiar = new JButton("Limpiar");
@@ -113,7 +113,7 @@ public class Jmedios extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 			}
 		});
-		btnLimpiar.setBounds(217, 169, 122, 23);
+		btnLimpiar.setBounds(322, 255, 122, 23);
 		jmedios.add(btnLimpiar);
 		
 		JButton btnNewButton = new JButton("");
@@ -129,7 +129,7 @@ public class Jmedios extends JFrame {
 			}
 		});
 		btnNewButton.setIcon(new ImageIcon("C:\\Users\\APRENDIZ\\Documents\\Iconos\\9004743_trash_delete_bin_remove_icon.png"));
-		btnNewButton.setBounds(121, 231, 66, 62);
+		btnNewButton.setBounds(10, 231, 66, 62);
 		jmedios.add(btnNewButton);
 		
 		txtidmedios = new JTextField();
@@ -150,7 +150,7 @@ public class Jmedios extends JFrame {
 			}
 		});
 		btnupdate.setIcon(new ImageIcon("C:\\Users\\APRENDIZ\\Documents\\Iconos\\6071808_folder_progress_task_update_update task progress_icon.png"));
-		btnupdate.setBounds(347, 231, 66, 62);
+		btnupdate.setBounds(211, 231, 66, 62);
 		jmedios.add(btnupdate);
 		
 		JButton btnbuscar = new JButton("");
@@ -162,8 +162,13 @@ public class Jmedios extends JFrame {
 			}
 		});
 		btnbuscar.setIcon(new ImageIcon("C:\\Users\\APRENDIZ\\Documents\\Iconos\\3827704_color_lineal_magnifying glass_sale_search_icon.png"));
-		btnbuscar.setBounds(243, 231, 66, 62);
+		btnbuscar.setBounds(109, 231, 66, 62);
 		jmedios.add(btnbuscar);
+		
+		JLabel lblNewLabel_3 = new JLabel("Informacion De Medios");
+		lblNewLabel_3.setFont(new Font("Serif", Font.BOLD, 20));
+		lblNewLabel_3.setBounds(145, 25, 211, 28);
+		jmedios.add(lblNewLabel_3);
 		btnLimpiar.addActionListener(e -> clearFields());
 	}
 

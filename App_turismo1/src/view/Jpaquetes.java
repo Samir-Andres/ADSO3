@@ -58,7 +58,7 @@ public class Jpaquetes extends JFrame {
 	 */
 	public Jpaquetes() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 450, 515);
+		setBounds(100, 100, 450, 582);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 
@@ -66,133 +66,133 @@ public class Jpaquetes extends JFrame {
 		contentPane.setLayout(null);
 		
 		txtiddestino = new JTextField();
-		txtiddestino.setBounds(22, 52, 103, 20);
+		txtiddestino.setBounds(23, 108, 103, 20);
 		contentPane.add(txtiddestino);
 		txtiddestino.setColumns(10);
 		
 		txtidorigen = new JTextField();
-		txtidorigen.setBounds(158, 52, 103, 20);
+		txtidorigen.setBounds(159, 108, 103, 20);
 		contentPane.add(txtidorigen);
 		txtidorigen.setColumns(10);
 		
 		txtfechaventa = new JTextField();
-		txtfechaventa.setBounds(305, 52, 103, 20);
+		txtfechaventa.setBounds(306, 108, 103, 20);
 		contentPane.add(txtfechaventa);
 		txtfechaventa.setColumns(10);
 		
 		txthoraventa = new JTextField();
-		txthoraventa.setBounds(22, 111, 103, 20);
+		txthoraventa.setBounds(23, 167, 103, 20);
 		contentPane.add(txthoraventa);
 		txthoraventa.setColumns(10);
 		
 		txtfechaejecucion = new JTextField();
-		txtfechaejecucion.setBounds(158, 111, 103, 20);
+		txtfechaejecucion.setBounds(159, 167, 103, 20);
 		contentPane.add(txtfechaejecucion);
 		txtfechaejecucion.setColumns(10);
 		
 		txthorasalida = new JTextField();
-		txthorasalida.setBounds(305, 111, 103, 20);
+		txthorasalida.setBounds(306, 167, 103, 20);
 		contentPane.add(txthorasalida);
 		txthorasalida.setColumns(10);
 		
 		txtobservacion = new JTextField();
-		txtobservacion.setBounds(22, 172, 103, 20);
+		txtobservacion.setBounds(23, 228, 103, 20);
 		contentPane.add(txtobservacion);
 		txtobservacion.setColumns(10);
 		
 		txtidagencia = new JTextField();
-		txtidagencia.setBounds(158, 172, 103, 20);
+		txtidagencia.setBounds(159, 228, 103, 20);
 		contentPane.add(txtidagencia);
 		txtidagencia.setColumns(10);
 		
 		txtidmedios = new JTextField();
-		txtidmedios.setBounds(305, 172, 103, 20);
+		txtidmedios.setBounds(306, 228, 103, 20);
 		contentPane.add(txtidmedios);
 		txtidmedios.setColumns(10);
 		
 		txtidpromotores = new JTextField();
-		txtidpromotores.setBounds(22, 236, 103, 20);
+		txtidpromotores.setBounds(23, 292, 103, 20);
 		contentPane.add(txtidpromotores);
 		txtidpromotores.setColumns(10);
 		
 		txtidvehiculo = new JTextField();
-		txtidvehiculo.setBounds(158, 236, 103, 20);
+		txtidvehiculo.setBounds(159, 292, 103, 20);
 		contentPane.add(txtidvehiculo);
 		txtidvehiculo.setColumns(10);
 		
 		txtprecios = new JTextField();
-		txtprecios.setBounds(305, 236, 103, 20);
+		txtprecios.setBounds(306, 292, 103, 20);
 		contentPane.add(txtprecios);
 		txtprecios.setColumns(10);
 		
 		txtidclientes = new JTextField();
-		txtidclientes.setBounds(22, 303, 103, 20);
+		txtidclientes.setBounds(23, 359, 103, 20);
 		contentPane.add(txtidclientes);
 		txtidclientes.setColumns(10);
 		
 		JLabel lblNewLabel = new JLabel("Id Destino");
 		lblNewLabel.setFont(new Font("Serif", Font.BOLD, 13));
-		lblNewLabel.setBounds(22, 27, 103, 14);
+		lblNewLabel.setBounds(23, 83, 103, 14);
 		contentPane.add(lblNewLabel);
 		
 		JLabel lblI = new JLabel("Id Origen");
 		lblI.setFont(new Font("Serif", Font.BOLD, 13));
-		lblI.setBounds(158, 27, 103, 14);
+		lblI.setBounds(159, 83, 103, 14);
 		contentPane.add(lblI);
 		
 		JLabel lblFechaDeVenta = new JLabel("Fecha de Venta");
 		lblFechaDeVenta.setFont(new Font("Serif", Font.BOLD, 13));
-		lblFechaDeVenta.setBounds(305, 27, 103, 14);
+		lblFechaDeVenta.setBounds(306, 83, 103, 14);
 		contentPane.add(lblFechaDeVenta);
 		
 		JLabel lblHoraDeVenta = new JLabel("Hora de Venta");
 		lblHoraDeVenta.setFont(new Font("Serif", Font.BOLD, 13));
-		lblHoraDeVenta.setBounds(22, 86, 103, 14);
+		lblHoraDeVenta.setBounds(23, 142, 103, 14);
 		contentPane.add(lblHoraDeVenta);
 		
 		JLabel lblFechaDeEjecucin = new JLabel("Fecha de Ejecución");
 		lblFechaDeEjecucin.setFont(new Font("Serif", Font.BOLD, 13));
-		lblFechaDeEjecucin.setBounds(158, 86, 103, 14);
+		lblFechaDeEjecucin.setBounds(159, 142, 103, 14);
 		contentPane.add(lblFechaDeEjecucin);
 		
 		JLabel lblHoraDeSalida = new JLabel("Hora de Salida");
 		lblHoraDeSalida.setFont(new Font("Serif", Font.BOLD, 13));
-		lblHoraDeSalida.setBounds(305, 86, 103, 14);
+		lblHoraDeSalida.setBounds(306, 142, 103, 14);
 		contentPane.add(lblHoraDeSalida);
 		
 		JLabel lblObservacin = new JLabel("Observación");
 		lblObservacin.setFont(new Font("Serif", Font.BOLD, 13));
-		lblObservacin.setBounds(22, 154, 103, 14);
+		lblObservacin.setBounds(23, 210, 103, 14);
 		contentPane.add(lblObservacin);
 		
 		JLabel lblIdAgencia = new JLabel("Id Agencia");
 		lblIdAgencia.setFont(new Font("Serif", Font.BOLD, 13));
-		lblIdAgencia.setBounds(158, 154, 103, 14);
+		lblIdAgencia.setBounds(159, 210, 103, 14);
 		contentPane.add(lblIdAgencia);
 		
 		JLabel lblIdMedios = new JLabel("Id Medios");
 		lblIdMedios.setFont(new Font("Serif", Font.BOLD, 13));
-		lblIdMedios.setBounds(305, 147, 103, 14);
+		lblIdMedios.setBounds(306, 203, 103, 14);
 		contentPane.add(lblIdMedios);
 		
 		JLabel lblIdPromotores = new JLabel("Id Promotores");
 		lblIdPromotores.setFont(new Font("Serif", Font.BOLD, 13));
-		lblIdPromotores.setBounds(22, 211, 103, 14);
+		lblIdPromotores.setBounds(23, 267, 103, 14);
 		contentPane.add(lblIdPromotores);
 		
 		JLabel lblIdVehiculo = new JLabel("Id Vehiculo");
 		lblIdVehiculo.setFont(new Font("Serif", Font.BOLD, 13));
-		lblIdVehiculo.setBounds(158, 211, 103, 14);
+		lblIdVehiculo.setBounds(159, 267, 103, 14);
 		contentPane.add(lblIdVehiculo);
 		
 		JLabel lblPrecios = new JLabel("Precios");
 		lblPrecios.setFont(new Font("Serif", Font.BOLD, 13));
-		lblPrecios.setBounds(305, 211, 103, 14);
+		lblPrecios.setBounds(306, 267, 103, 14);
 		contentPane.add(lblPrecios);
 		
 		JLabel lblIdClientes = new JLabel("Id Clientes");
 		lblIdClientes.setFont(new Font("Serif", Font.BOLD, 13));
-		lblIdClientes.setBounds(22, 278, 103, 14);
+		lblIdClientes.setBounds(23, 334, 103, 14);
 		contentPane.add(lblIdClientes);
 		
 		JButton btnRegistrar = new JButton("");
@@ -213,23 +213,23 @@ public class Jpaquetes extends JFrame {
 			}
 		});
 		btnRegistrar.setFont(new Font("Serif", Font.BOLD, 13));
-		btnRegistrar.setBounds(22, 345, 68, 57);
+		btnRegistrar.setBounds(22, 412, 68, 57);
 		contentPane.add(btnRegistrar);
 		
 		JButton btnLimpiar = new JButton("Limpiar");
 		btnLimpiar.setFont(new Font("Serif", Font.BOLD, 13));
-		btnLimpiar.setBounds(158, 442, 103, 23);
+		btnLimpiar.setBounds(158, 509, 103, 23);
 		contentPane.add(btnLimpiar);
 		
 		txtcodigo = new JTextField();
 		txtcodigo.setText("");
 		txtcodigo.setColumns(10);
-		txtcodigo.setBounds(158, 303, 103, 20);
+		txtcodigo.setBounds(159, 359, 103, 20);
 		contentPane.add(txtcodigo);
 		
 		JLabel lblCodigoPaquete = new JLabel("Codigo Paquete");
 		lblCodigoPaquete.setFont(new Font("Serif", Font.BOLD, 13));
-		lblCodigoPaquete.setBounds(158, 278, 103, 14);
+		lblCodigoPaquete.setBounds(159, 334, 103, 14);
 		contentPane.add(lblCodigoPaquete);
 		
 		JButton btnNewButton = new JButton("");
@@ -247,7 +247,7 @@ public class Jpaquetes extends JFrame {
 			}
 		});
 		btnNewButton.setIcon(new ImageIcon("C:\\Users\\APRENDIZ\\Documents\\Iconos\\9004743_trash_delete_bin_remove_icon.png"));
-		btnNewButton.setBounds(122, 345, 68, 57);
+		btnNewButton.setBounds(122, 412, 68, 57);
 		contentPane.add(btnNewButton);
 		
 		JButton btnNewButton_1 = new JButton("");
@@ -258,7 +258,7 @@ public class Jpaquetes extends JFrame {
 			}
 		});
 		btnNewButton_1.setIcon(new ImageIcon("C:\\Users\\APRENDIZ\\Documents\\Iconos\\3827704_color_lineal_magnifying glass_sale_search_icon.png"));
-		btnNewButton_1.setBounds(224, 345, 60, 57);
+		btnNewButton_1.setBounds(224, 412, 60, 57);
 		contentPane.add(btnNewButton_1);
 		
 		JButton btnupdate = new JButton("");
@@ -277,8 +277,13 @@ public class Jpaquetes extends JFrame {
 			}
 		});
 		btnupdate.setIcon(new ImageIcon("C:\\Users\\APRENDIZ\\Documents\\Iconos\\6071808_folder_progress_task_update_update task progress_icon.png"));
-		btnupdate.setBounds(324, 345, 60, 57);
+		btnupdate.setBounds(324, 412, 60, 57);
 		contentPane.add(btnupdate);
+		
+		JLabel lblNewLabel_1 = new JLabel("Información De Paquetes");
+		lblNewLabel_1.setFont(new Font("Serif", Font.BOLD, 20));
+		lblNewLabel_1.setBounds(107, 32, 237, 23);
+		contentPane.add(lblNewLabel_1);
 		btnLimpiar.addActionListener(e -> ClearFields());
 		
 		
