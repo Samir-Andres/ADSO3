@@ -68,7 +68,7 @@ public class Fr_Acceso extends JFrame {
 		contentPane.setLayout(null);
 		
 		txtdocumento = new JTextField();
-		txtdocumento.setBounds(178, 96, 125, 20);
+		txtdocumento.setBounds(178, 96, 141, 20);
 		contentPane.add(txtdocumento);
 		txtdocumento.setColumns(10);
 		
@@ -109,12 +109,12 @@ public class Fr_Acceso extends JFrame {
 			
 		});
 		btnNewButton.setFont(new Font("Serif", Font.BOLD, 16));
-		btnNewButton.setBounds(178, 188, 125, 29);
+		btnNewButton.setBounds(178, 208, 141, 29);
 		contentPane.add(btnNewButton);
 		
 		txtcontraseña = new JPasswordField();
 		txtcontraseña.setEchoChar('*');
-		txtcontraseña.setBounds(178, 157, 125, 20);
+		txtcontraseña.setBounds(178, 157, 141, 20);
 		contentPane.add(txtcontraseña);
 		
 		JLabel lblNewLabel_1 = new JLabel("Control de acceso");
@@ -170,5 +170,17 @@ public class Fr_Acceso extends JFrame {
 		table_5.setBackground(new Color(0, 79, 79));
 		table_5.setBounds(356, 236, 121, 25);
 		contentPane.add(table_5);
+		
+		JButton btnrecuperar = new JButton("Recuperar contraseña");
+		btnrecuperar.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				
+				
+			}
+		});
+		btnrecuperar.setBackground(new Color(94, 174, 174));
+		btnrecuperar.setBounds(178, 183, 141, 14);
+		contentPane.add(btnrecuperar);
 	}
 }
