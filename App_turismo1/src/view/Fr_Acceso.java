@@ -98,7 +98,7 @@ public class Fr_Acceso extends JFrame {
 					in.ControlAcceso(Integer.parseInt(txtdocumento.getText()), txtcontraseña.getText());
 					
 				} catch (Exception e2) {
-					
+					//original
 					JOptionPane.showConfirmDialog(null, "No has ingresado datos");
 					
 					 }
