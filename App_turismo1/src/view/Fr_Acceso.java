@@ -19,6 +19,8 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.Color;
 import javax.swing.ImageIcon;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class Fr_Acceso extends JFrame {
 
@@ -50,7 +52,7 @@ public class Fr_Acceso extends JFrame {
 	 */
 	public Fr_Acceso() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 450, 300);
+		setBounds(100, 100, 493, 300);
 		contentPane = new JPanel();
 		contentPane.setBackground(new Color(0, 151, 151));
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -75,8 +77,8 @@ public class Fr_Acceso extends JFrame {
 		lblContrasea.setBounds(75, 164, 121, 14);
 		contentPane.add(lblContrasea);
 		
-		JButton btnNewButton = new JButton("");
-		btnNewButton.setIcon(new ImageIcon("C:\\Users\\APRENDIZ\\Downloads\\211621_c_right_arrow_icon.png"));
+		JButton btnNewButton = new JButton("Ingresar");
+		btnNewButton.setIcon(null);
 		btnNewButton.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -90,7 +92,7 @@ public class Fr_Acceso extends JFrame {
 			}
 		});
 		btnNewButton.setFont(new Font("Serif", Font.BOLD, 16));
-		btnNewButton.setBounds(206, 208, 112, 29);
+		btnNewButton.setBounds(206, 208, 125, 29);
 		contentPane.add(btnNewButton);
 		
 		txtcontraseña = new JPasswordField();
@@ -103,5 +105,23 @@ public class Fr_Acceso extends JFrame {
 		lblNewLabel_1.setFont(new Font("Serif", Font.BOLD, 22));
 		lblNewLabel_1.setBounds(176, 27, 172, 29);
 		contentPane.add(lblNewLabel_1);
+		
+		JButton btnCrear = new JButton("Crear ");
+		btnCrear.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				
+				Jpromotores promotores = new Jpromotores();
+				promotores.setVisible(true);
+			}
+		});
+		btnCrear.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
+		btnCrear.setIcon(null);
+		btnCrear.setFont(new Font("Serif", Font.BOLD, 16));
+		btnCrear.setBounds(386, 122, 81, 29);
+		contentPane.add(btnCrear);
 	}
 }

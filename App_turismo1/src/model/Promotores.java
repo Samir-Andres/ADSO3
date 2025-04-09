@@ -95,11 +95,11 @@ public class Promotores {
 
 	
 	public void create(int tipodocumento, int documento, String nombres, String apellidos, String direccion,String correopersonal,
-			String correocorp, String fechanacimiento, String telefono) {
+			String correocorp, String fechanacimiento, String telefono, String contraseña) {
 		Connection dbConnection = null;
 		PreparedStatement pst = null; // prepara la txc
 		
-		String script = "INSERT INTO tblpromotores (tipodocumento, documento, nombres, apellidos, direccion, correopersonal,correocorp,fechanacimiento, telefono) values (?,?,?,?,?,?,?,?,?)";
+		String script = "INSERT INTO tblpromotores (tipodocumento, documento, nombres, apellidos, direccion, correopersonal,correocorp,fechanacimiento, telefono, contraseña) values (?,?,?,?,?,?,?,?,?,?)";
 		
 		try {
 			
@@ -115,9 +115,14 @@ public class Promotores {
 			pst.setString(7, correocorp);
 			pst.setString(8, fechanacimiento);
 			pst.setString(9, telefono);
+			pst.setString(10, contraseña);
 			
-			pst.executeUpdate();
 			
+			
+			int res = JOptionPane.showConfirmDialog(null, "¿Desea registrar esta informacion?");
+			
+			if(res == JOptionPane.YES_OPTION)
+		   pst.executeUpdate();
 			JOptionPane.showConfirmDialog(null, "Registro con exito");
 			
 		} catch (SQLException e) {

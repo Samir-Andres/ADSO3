@@ -167,7 +167,7 @@ public class Jpromotores extends JFrame {
 				
 				cr.create(Integer.parseInt(txttipodocumento.getText()), Integer.parseInt(txtdocumento.getText()), txtnombres.getText(), 
 				txtapellidos.getText(), txtdireccion.getText(), txtcorreopersonal.getText(), txtcorreocorp.getText(), 
-				txtfechanacimiento.getText(), txttelefono.getText());
+				txtfechanacimiento.getText(), txttelefono.getText(), txtcontraseña.getText());
 			}
 		});
 		btnRegistrar.setFont(new Font("Serif", Font.BOLD, 13));

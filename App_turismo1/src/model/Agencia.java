@@ -95,7 +95,7 @@ public class Agencia {
 		
 	}
 	
-	public void delete(int idagencia ) {
+	public void delete(int idagencia ) { 
 		Connection dbConnection = null;  // Se crea un objeto de la clase Connection
 		PreparedStatement pst = null; // Se prepara la transaccion
 		
@@ -135,7 +135,9 @@ public class Agencia {
 			
 			pst.setInt(1, idagencia);
 						
-			ResultSet rs = pst.executeQuery();
+			ResultSet rs = pst.executeQuery();  // Resultset es Almacenamiento temporal 
+//			executeQuery es un metodo que ejcuta una sentencia sql y recupera los datos de un objeto Resultset
+			
 			
 			while(rs.next()) {
 				nombre.setText(rs.getString(2));

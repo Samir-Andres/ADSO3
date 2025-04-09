@@ -40,27 +40,26 @@ public class Acc_Promotores {
 
 	    try {
 	        dbconnection = conector.conectarBD();
-	        
 	        pst = dbconnection.prepareStatement(script);
+	        
 	        pst.setInt(1, documento);
 	        pst.setString(2, contraseña);
 	        
-	        ResultSet rs =  pst.executeQuery();
 	        
-
-	        	
-         int seguir = JOptionPane.showConfirmDialog(null, "¡Desea iniciar sesion?");
-
-        if (seguir == JOptionPane.OK_OPTION) {
-        	 JOptionPane.showMessageDialog(null, "Acceso Permitido");
-        	 
-        	 while(rs.next()) {
-	        	  principal.show();
-	        	 
-	        }
-        	 
+	        ResultSet rs =  pst.executeQuery();
+        	if(rs.next()) {
+            int seguir = JOptionPane.showConfirmDialog(null, "¡Desea iniciar sesion?");
+        	if (seguir == JOptionPane.OK_OPTION) 
+        		JOptionPane.showConfirmDialog(null, "Acceso permitido");
+        		principal.show();
         	
-           	
+        		
+        } else {
+        	
+        	JOptionPane.showConfirmDialog(principal,"No se encuentra registrado en el sistema");  
+	        	  
+	  
+       
         }
 	         
 	    } catch (SQLException e) {

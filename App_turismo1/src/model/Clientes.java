@@ -94,7 +94,7 @@ public class Clientes {
 	}
 	public void create(int tipodocumento, int documento, String nombres, String apellidos, String eps,String alergias,
 			int fechanacimiento, String correo, String estadocivil, String telefono, String direccion) {
-		Connection dbConnection = null;
+		Connection dbConnection = null; 
 		PreparedStatement pst = null; // prepara la txc
 		
 		String script = "INSERT INTO tblclientes (tipodocumento, documento, nombres, apellidos, alergias, eps, fechanacimiento, correo, estadocivil, telefono, direccion) values (?,?,?,?,?,?,?,?,?,?,?)";
@@ -142,7 +142,7 @@ public class Clientes {
 			
 			pst.setInt(1, idclientes);
 			
-			ResultSet rs = pst.executeQuery();
+			ResultSet rs = pst.executeQuery(); 
 			
 			
 			while (rs.next()) {

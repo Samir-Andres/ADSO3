@@ -199,10 +199,8 @@ public class Jpaquetes extends JFrame {
 		btnRegistrar.setIcon(new ImageIcon("C:\\Users\\APRENDIZ\\Documents\\Iconos\\9027370_save_icon.png"));
 		btnRegistrar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				
-				
-		
-				
+
+	
 				cr.create(Integer.parseInt(txtiddestino.getText()), Integer.parseInt(txtidorigen.getText()), txtfechaventa.getText(), txthoraventa.getText(), txtfechaejecucion.getText(), txthorasalida.getText(), txtobservacion.getText(), Integer.parseInt(txtidagencia.getText()),
 						Integer.parseInt(txtidmedios.getText()), Integer.parseInt(txtidpromotores.getText()), Integer.parseInt(txtidvehiculo.getText()), txtprecios.getText(), Integer.parseInt(txtidclientes.getText()));
 				
@@ -270,6 +268,7 @@ public class Jpaquetes extends JFrame {
 			    txtfechaventa.getText(), txthoraventa.getText(), txtfechaejecucion.getText(), txthorasalida.getText(), txtobservacion.getText(), Integer.parseInt(txtidagencia.getText()), 
 			    Integer.parseInt(txtidmedios.getText()), Integer.parseInt(txtidpromotores.getText()), Integer.parseInt(txtidvehiculo.getText()), txtprecios.getText(),
 			    Integer.parseInt(txtidclientes.getText()));
+				
 			}
 		});
 		btnupdate.addActionListener(new ActionListener() {

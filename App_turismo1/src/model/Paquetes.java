@@ -195,6 +195,7 @@ public class Paquetes {
 			String horasalida, String observacion, int idagencia, int idmedios, int idpromotores, int idvehiculo, String precios, int idclientes) {
 	    Connection dbconnection = null;
 	    PreparedStatement pst = null;
+	    
 	    String script = "UPDATE tblpaquetes SET iddestino =?, idorigen =?,  fechaventa=?, horaventa=?, fechaejecucion=?, horasalida=?, observacion =?, idagencia =?, idmedios=?, idpromotores =?, idvehiculo=?, precios=?, idclientes=? WHERE codigo = ?";
 
 	    try {
@@ -217,6 +218,7 @@ public class Paquetes {
 			pst.setInt(14, codigo);
 
 	        int resp = JOptionPane.showConfirmDialog(null, "¿Desea actualizar el registro No. " + codigo + "?");
+	        
 	        if (resp == JOptionPane.YES_OPTION) {
 	            pst.executeUpdate();
 	            JOptionPane.showMessageDialog(null, "Registro No. " + codigo + " actualizado");
