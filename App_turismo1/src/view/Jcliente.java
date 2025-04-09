@@ -78,7 +78,7 @@ public class Jcliente extends JFrame {
 	 */
 	public Jcliente() {
 		setTitle("Registro de Clientes");
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setBounds(100, 100, 617, 498);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));

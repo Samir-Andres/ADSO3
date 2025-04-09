@@ -47,6 +47,7 @@ public class Acc_Promotores {
 	        
 	        
 	        ResultSet rs =  pst.executeQuery();
+	        
         	if(rs.next()) {
             int seguir = JOptionPane.showConfirmDialog(null, "¡Desea iniciar sesion?");
         	if (seguir == JOptionPane.OK_OPTION) 
@@ -55,13 +56,9 @@ public class Acc_Promotores {
         	
         		
         } else {
-        	
-        	JOptionPane.showConfirmDialog(principal,"No se encuentra registrado en el sistema");  
-	        	  
-	  
+        	JOptionPane.showConfirmDialog(null,"No se encuentra registrado en el sistema"); 
        
         }
-	         
 	    } catch (SQLException e) {
 	        System.out.println(e.getMessage());
 	    

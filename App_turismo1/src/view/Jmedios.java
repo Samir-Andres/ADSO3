@@ -48,7 +48,7 @@ public class Jmedios extends JFrame {
 	 * Create the frame.
 	 */
 	public Jmedios() {
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setBounds(100, 100, 485, 360);
 		jmedios = new JPanel();
 		jmedios.setBorder(new EmptyBorder(5, 5, 5, 5));

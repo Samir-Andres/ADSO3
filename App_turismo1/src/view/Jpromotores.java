@@ -18,6 +18,7 @@ import java.awt.event.MouseEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.ImageIcon;
+import java.awt.Window.Type;
 
 public class Jpromotores extends JFrame {
 
@@ -55,7 +56,7 @@ public class Jpromotores extends JFrame {
 	 * Create the frame.
 	 */
 	public Jpromotores() {
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setBounds(100, 100, 497, 507);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -180,7 +181,7 @@ public class Jpromotores extends JFrame {
 			}
 		});
 		btnLimpiar.setFont(new Font("Serif", Font.BOLD, 13));
-		btnLimpiar.setBounds(195, 421, 116, 23);
+		btnLimpiar.setBounds(31, 422, 116, 35);
 		contentPane.add(btnLimpiar);
 		
 		JButton btnNewButton = new JButton("");
@@ -257,6 +258,20 @@ public class Jpromotores extends JFrame {
 		lblNewLabel_10.setFont(new Font("Serif", Font.BOLD, 20));
 		lblNewLabel_10.setBounds(116, 42, 248, 27);
 		contentPane.add(lblNewLabel_10);
+		
+		JButton btnNewButton_1 = new JButton("Iniciar sesión");
+		btnNewButton_1.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				
+				Fr_Acceso acceso = new Fr_Acceso();
+				
+				acceso.setVisible(true);
+			}
+		});
+		btnNewButton_1.setFont(new Font("Serif", Font.BOLD, 13));
+		btnNewButton_1.setBounds(307, 276, 116, 35);
+		contentPane.add(btnNewButton_1);
 		btnLimpiar.addActionListener(e -> clearFields());
 	}
 

@@ -139,7 +139,7 @@ public class Interfaz_promotor extends JFrame {
 			}
 		});
 		bntoperadores.setIcon(new ImageIcon("C:\\Users\\APRENDIZ\\Downloads\\4715004_actor_avatar_people_person_profile_icon.png"));
-		bntoperadores.setBounds(26, 202, 61, 57);
+		bntoperadores.setBounds(26, 229, 61, 57);
 		contentPane.add(bntoperadores);
 		
 		JButton btnpaquetes = new JButton("");
@@ -154,7 +154,7 @@ public class Interfaz_promotor extends JFrame {
 			}
 		});
 		btnpaquetes.setIcon(new ImageIcon("C:\\Users\\APRENDIZ\\Downloads\\6791621_box_package_product_products_icon.png"));
-		btnpaquetes.setBounds(157, 202, 61, 57);
+		btnpaquetes.setBounds(157, 229, 61, 57);
 		contentPane.add(btnpaquetes);
 		
 		JButton btnpromotores = new JButton("");
@@ -175,7 +175,7 @@ public class Interfaz_promotor extends JFrame {
 			}
 		});
 		btnpromotores.setIcon(new ImageIcon("C:\\Users\\APRENDIZ\\Downloads\\4417115_headset_operator_person_support_mic_icon.png"));
-		btnpromotores.setBounds(281, 202, 61, 57);
+		btnpromotores.setBounds(281, 229, 61, 57);
 		contentPane.add(btnpromotores);
 		
 		JButton btnvehiculos = new JButton("");
@@ -196,7 +196,7 @@ public class Interfaz_promotor extends JFrame {
 			}
 		});
 		btnvehiculos.setIcon(new ImageIcon("C:\\Users\\APRENDIZ\\Downloads\\4288586_and_cargo_delivery_shipping_transport_icon.png"));
-		btnvehiculos.setBounds(412, 202, 61, 57);
+		btnvehiculos.setBounds(412, 229, 61, 57);
 		contentPane.add(btnvehiculos);
 		
 		JButton bnttiposvehiculos = new JButton("");
@@ -212,12 +212,102 @@ public class Interfaz_promotor extends JFrame {
 			}
 		});
 		bnttiposvehiculos.setIcon(new ImageIcon("C:\\Users\\APRENDIZ\\Downloads\\5978677_airplane_corona_coronavirus_plane_travel_icon.png"));
-		bnttiposvehiculos.setBounds(546, 202, 61, 57);
+		bnttiposvehiculos.setBounds(546, 229, 61, 57);
 		contentPane.add(bnttiposvehiculos);
 		
 		JLabel lblNewLabel = new JLabel("Bienvenidos al centro de información");
 		lblNewLabel.setFont(new Font("Serif", Font.BOLD, 19));
 		lblNewLabel.setBounds(172, 22, 329, 25);
 		contentPane.add(lblNewLabel);
+		
+		JLabel lblNewLabel_1 = new JLabel("Compañia");
+		lblNewLabel_1.setFont(new Font("Serif", Font.BOLD, 13));
+		lblNewLabel_1.setBounds(26, 188, 75, 14);
+		contentPane.add(lblNewLabel_1);
+		
+		JLabel lblNewLabel_1_1 = new JLabel("Agencia");
+		lblNewLabel_1_1.setFont(new Font("Serif", Font.BOLD, 13));
+		lblNewLabel_1_1.setBounds(157, 188, 46, 14);
+		contentPane.add(lblNewLabel_1_1);
+		
+		JLabel lblNewLabel_1_2 = new JLabel("Medios");
+		lblNewLabel_1_2.setFont(new Font("Serif", Font.BOLD, 13));
+		lblNewLabel_1_2.setBounds(422, 188, 46, 14);
+		contentPane.add(lblNewLabel_1_2);
+		
+		JLabel lblNewLabel_1_3 = new JLabel("Tipos de Medios");
+		lblNewLabel_1_3.setFont(new Font("Serif", Font.BOLD, 13));
+		lblNewLabel_1_3.setBounds(269, 188, 87, 14);
+		contentPane.add(lblNewLabel_1_3);
+		
+		JLabel lblNewLabel_1_4 = new JLabel("Clientes");
+		lblNewLabel_1_4.setFont(new Font("Serif", Font.BOLD, 13));
+		lblNewLabel_1_4.setBounds(556, 188, 46, 14);
+		contentPane.add(lblNewLabel_1_4);
+		
+		JLabel lblNewLabel_1_5 = new JLabel("Tipos de Vehículos");
+		lblNewLabel_1_5.setFont(new Font("Serif", Font.BOLD, 13));
+		lblNewLabel_1_5.setBounds(520, 313, 112, 14);
+		contentPane.add(lblNewLabel_1_5);
+		
+		JLabel lblNewLabel_1_6 = new JLabel("Vehículos");
+		lblNewLabel_1_6.setFont(new Font("Serif", Font.BOLD, 13));
+		lblNewLabel_1_6.setBounds(412, 313, 61, 14);
+		contentPane.add(lblNewLabel_1_6);
+		
+		JLabel lblNewLabel_1_7 = new JLabel("Promotores");
+		lblNewLabel_1_7.setFont(new Font("Serif", Font.BOLD, 13));
+		lblNewLabel_1_7.setBounds(281, 313, 75, 14);
+		contentPane.add(lblNewLabel_1_7);
+		
+		JLabel lblNewLabel_1_8 = new JLabel("Paquetes");
+		lblNewLabel_1_8.setFont(new Font("Serif", Font.BOLD, 13));
+		lblNewLabel_1_8.setBounds(157, 313, 61, 14);
+		contentPane.add(lblNewLabel_1_8);
+		
+		JLabel lblNewLabel_1_9 = new JLabel("Operadores");
+		lblNewLabel_1_9.setFont(new Font("Serif", Font.BOLD, 13));
+		lblNewLabel_1_9.setBounds(26, 313, 75, 14);
+		contentPane.add(lblNewLabel_1_9);
+		
+		JSeparator separator = new JSeparator();
+		separator.setBounds(26, 297, 61, 20);
+		contentPane.add(separator);
+		
+		JSeparator separator_1 = new JSeparator();
+		separator_1.setBounds(26, 168, 61, 20);
+		contentPane.add(separator_1);
+		
+		JSeparator separator_2 = new JSeparator();
+		separator_2.setBounds(157, 168, 61, 20);
+		contentPane.add(separator_2);
+		
+		JSeparator separator_3 = new JSeparator();
+		separator_3.setBounds(281, 168, 61, 20);
+		contentPane.add(separator_3);
+		
+		JSeparator separator_4 = new JSeparator();
+		separator_4.setBounds(412, 168, 61, 20);
+		contentPane.add(separator_4);
+		
+		JSeparator separator_5 = new JSeparator();
+		separator_5.setBounds(546, 168, 61, 20);
+		contentPane.add(separator_5);
+		
+		JSeparator separator_6 = new JSeparator();
+		separator_6.setBounds(157, 297, 61, 20);
+		contentPane.add(separator_6);
+		
+		JSeparator separator_7 = new JSeparator();
+		separator_7.setBounds(281, 297, 61, 20);
+		contentPane.add(separator_7);
+		
+		JSeparator separator_8 = new JSeparator();
+		separator_8.setBounds(412, 297, 61, 20);
+		contentPane.add(separator_8);
+		
+		JSeparator separator_9 = new JSeparator();
+		separator_9.setBounds(546, 297, 61, 20);
+		contentPane.add(separator_9);
 	}
 }
