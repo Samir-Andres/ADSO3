@@ -68,7 +68,7 @@ public class Fr_Acceso extends JFrame {
 		contentPane.setLayout(null);
 		
 		txtdocumento = new JTextField();
-		txtdocumento.setBounds(178, 96, 141, 20);
+		txtdocumento.setBounds(149, 96, 167, 20);
 		contentPane.add(txtdocumento);
 		txtdocumento.setColumns(10);
 		
@@ -81,7 +81,7 @@ public class Fr_Acceso extends JFrame {
 		JLabel lblContrasea = new JLabel("Contraseña");
 		lblContrasea.setForeground(new Color(255, 255, 255));
 		lblContrasea.setFont(new Font("Serif", Font.BOLD, 16));
-		lblContrasea.setBounds(53, 163, 121, 14);
+		lblContrasea.setBounds(53, 153, 121, 14);
 		contentPane.add(lblContrasea);
 		
 		JButton btnNewButton = new JButton("Ingresar");
@@ -98,7 +98,7 @@ public class Fr_Acceso extends JFrame {
 					in.ControlAcceso(Integer.parseInt(txtdocumento.getText()), txtcontraseña.getText());
 					
 				} catch (Exception e2) {
-					//original
+					
 					JOptionPane.showConfirmDialog(null, "No has ingresado datos");
 					
 					 }
@@ -109,12 +109,12 @@ public class Fr_Acceso extends JFrame {
 			
 		});
 		btnNewButton.setFont(new Font("Serif", Font.BOLD, 16));
-		btnNewButton.setBounds(178, 208, 141, 29);
+		btnNewButton.setBounds(149, 208, 167, 29);
 		contentPane.add(btnNewButton);
 		
 		txtcontraseña = new JPasswordField();
 		txtcontraseña.setEchoChar('*');
-		txtcontraseña.setBounds(178, 157, 141, 20);
+		txtcontraseña.setBounds(149, 147, 167, 20);
 		contentPane.add(txtcontraseña);
 		
 		JLabel lblNewLabel_1 = new JLabel("Control de acceso");
@@ -176,11 +176,14 @@ public class Fr_Acceso extends JFrame {
 			@Override
 			public void mouseClicked(MouseEvent e) {
 				
+				Jrecuperarcontraseña re = new Jrecuperarcontraseña();
+				 re.setVisible(true);
+				
 				
 			}
 		});
 		btnrecuperar.setBackground(new Color(94, 174, 174));
-		btnrecuperar.setBounds(178, 183, 141, 14);
+		btnrecuperar.setBounds(149, 178, 167, 14);
 		contentPane.add(btnrecuperar);
 	}
 }

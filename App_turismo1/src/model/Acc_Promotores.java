@@ -56,9 +56,34 @@ public class Acc_Promotores {
         	
         		
         } else {
-        	JOptionPane.showConfirmDialog(null,"No se encuentra registrado en el sistema"); 
+        	JOptionPane.showConfirmDialog(null,"Usuario o contraseñas incorrectas"); 
        
         }
+	    } catch (SQLException e) {
+	        System.out.println(e.getMessage());
+	    
+	    }
+	}
+	public void recupercontraseña(int documento, String contraseña,String contraseña1) {
+	    Connection dbconnection = null;
+	    PreparedStatement pst = null;
+	    
+	    String script = "Update tblpromotores set contraseña = ?, contraseña1 = ? where documento = ?";
+
+	    try {
+	        dbconnection = conector.conectarBD();
+	        pst = dbconnection.prepareStatement(script);
+	        
+	        pst.setString(1, contraseña);
+	        pst.setString(2, contraseña1);
+	        pst.setInt(3, documento);
+	        
+	        int resp = JOptionPane.showConfirmDialog(null, "¿Desea recuperar la contraseña al usuario " + documento + " ?");
+	        if (resp == JOptionPane.YES_OPTION) {
+	            pst.executeUpdate();
+	          
+	        }
+	              
 	    } catch (SQLException e) {
 	        System.out.println(e.getMessage());
 	    

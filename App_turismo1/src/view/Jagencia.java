@@ -140,7 +140,7 @@ public class Jagencia extends JFrame {
 			}
 		});
 		btnRegistrar.setFont(new Font("Serif", Font.BOLD, 13));
-		btnRegistrar.setBounds(148, 285, 57, 52);
+		btnRegistrar.setBounds(27, 284, 57, 52);
 		contentPane.add(btnRegistrar);
 		
 		JButton btnLimpiar = new JButton("Limpiar");
@@ -169,7 +169,7 @@ public class Jagencia extends JFrame {
 			}
 		});
 		btnEliminar.setIcon(new ImageIcon("C:\\Users\\APRENDIZ\\Documents\\Iconos\\9004743_trash_delete_bin_remove_icon.png"));
-		btnEliminar.setBounds(229, 285, 64, 52);
+		btnEliminar.setBounds(147, 284, 64, 52);
 		contentPane.add(btnEliminar);
 		
 		JButton btnNewButton = new JButton("");
@@ -188,7 +188,7 @@ public class Jagencia extends JFrame {
 			}
 		});
 		btnNewButton.setIcon(new ImageIcon("C:\\Users\\APRENDIZ\\Documents\\Iconos\\3827704_color_lineal_magnifying glass_sale_search_icon.png"));
-		btnNewButton.setBounds(310, 285, 57, 52);
+		btnNewButton.setBounds(266, 284, 57, 52);
 		contentPane.add(btnNewButton);
 		
 		JButton btnNewButton_1 = new JButton("");
@@ -206,13 +206,25 @@ public class Jagencia extends JFrame {
 			}
 		});
 		btnNewButton_1.setIcon(new ImageIcon("C:\\Users\\APRENDIZ\\Documents\\Iconos\\6071808_folder_progress_task_update_update task progress_icon.png"));
-		btnNewButton_1.setBounds(387, 285, 57, 52);
+		btnNewButton_1.setBounds(362, 284, 57, 52);
 		contentPane.add(btnNewButton_1);
 		
 		JLabel lblNewLabel_7 = new JLabel("Información Agencia");
 		lblNewLabel_7.setFont(new Font("Serif", Font.BOLD, 20));
 		lblNewLabel_7.setBounds(140, 42, 227, 23);
 		contentPane.add(lblNewLabel_7);
+		
+		JButton btnNewButton_2 = new JButton("Atras");
+		btnNewButton_2.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				Interfaz_promotor in = new Interfaz_promotor();
+				in.setVisible(true);
+			}
+		});
+		btnNewButton_2.setFont(new Font("Serif", Font.BOLD, 13));
+		btnNewButton_2.setBounds(10, 11, 89, 23);
+		contentPane.add(btnNewButton_2);
 		btnLimpiar.addActionListener(e -> clearFields());
 	}
 
